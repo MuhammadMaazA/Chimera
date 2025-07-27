@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "project-chimera"
+version = "0.1.0"
+description = "An experimental framework for comparing and optimizing efficient Transformer architectures on long-text tasks."
+authors = ["Muhammad Maaz <mmaaz172005@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+# This now correctly reflects your system's Python 3.13
+python = "^3.13"
+torch = "*"
+numpy = "*"
+scikit-learn = "*"
+datasets = "*"
+tqdm = "*"
+# THIS IS THE CORRECTED LINE:
+hydra-core = {version = "*", allow-prereleases = true}
+mlflow = "*"
+fastapi = "*"
+uvicorn = {version = "*", extras = ["standard"]}
+flash-attn = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

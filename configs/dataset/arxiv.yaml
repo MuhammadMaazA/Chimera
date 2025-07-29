@@ -1,0 +1,4 @@
+name: arxiv
+path: "scientific_papers"
+category: "arxiv"
+max_length: 4096

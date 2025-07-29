@@ -1,0 +1,12 @@
+name: longformer
+architecture:
+  _target_: src.models.core.ChimeraTransformer
+  d_model: 512
+  nhead: 8
+  num_encoder_layers: 4
+  dim_feedforward: 2048
+  dropout: 0.1
+  use_flash_attention: False
+  attention_layer:
+    _target_: src.models.attention.LongformerAttention
+    attention_window: 512

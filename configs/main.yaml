@@ -1,0 +1,17 @@
+# configs/main.yaml
+
+defaults:
+  - dataset: arxiv
+  - model: standard_flash
+  - training: default
+  - _self_
+
+# --- General Project Settings ---
+project_name: "Project-Chimera"
+run_name: "${model.name}-${now:%Y-%m-%d_%H-%M-%S}"
+
+# --- Directory Settings ---
+# Hydra automatically changes the working directory.
+# This ensures we can still find our original project root.
+original_work_dir: ${hydra:runtime.cwd}
+data_dir: ${original_work_dir}/data/

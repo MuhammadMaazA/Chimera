@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   dev:
     build:
@@ -12,6 +10,9 @@ services:
     ports:
       - "5001:5001"
       - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+      - CUDA_VISIBLE_DEVICES=0
     deploy:
       resources:
         reservations:

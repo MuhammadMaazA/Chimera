@@ -10,7 +10,7 @@ The primary goal is to conduct a rigorous comparison of standard attention again
 
 -   **Author**: Muhammad Maaz
 -   **GitHub**: [MuhammadMaazA](https://github.com/MuhammadMaazA)
--   **Contact**: <MMAAZ172005@GMAIL.COM>
+-   **Contact**: <mmaaz172005@gmail.com>
 
 ---
 

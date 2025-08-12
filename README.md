@@ -59,7 +59,6 @@ Navigate to `http://localhost:5001` in your browser to see all logged parameters
 Once a model is trained and saved via MLflow, you can serve it using the FastAPI application.
 
 ```bash
-# (Instructions to be added once the API is implemented)
 docker-compose run --rm dev poetry run python src/api/serve.py --run_id <YOUR_MLFLOW_RUN_ID>
 ```
 
